@@ -26,6 +26,7 @@
     "[stylus]": {
         "editor.defaultFormatter": "thisismanta.stylus-supremacy"
     },
+    "bun.runtime": "c:\\users\\dmitr\\appdata\\local\\mise\\shims\\bun.exe",
     "cSpell.enabledSchemes": {
         "file": false
     },

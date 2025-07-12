@@ -1,0 +1,17 @@
+[install]
+optional = true
+peer = true
+production = false
+exact = false
+saveTextLockfile = false
+auto = "fallback"
+
+[run]
+shell = "bun"
+bun = true
+
+[test]
+root = "./tests"
+coverage = true
+coverageThreshold = 0.9
+coverageSkipTestFiles = false

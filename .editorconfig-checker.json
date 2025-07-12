@@ -1,0 +1,10 @@
+{
+    "AllowedContentTypes": [],
+    "Exclude": [".*LICENSE"],
+    "Format": "",
+    "IgnoreDefaults": false,
+    "PassedFiles": [],
+    "SpacesAfterTabs": false,
+    "Verbose": false,
+    "Version": "v3.3.0"
+}

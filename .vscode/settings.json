@@ -1,0 +1,142 @@
+{
+    "[gitattributes]": {
+        "editor.defaultFormatter": "yy0931.gitconfig-lsp"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[gitignore]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[ignore]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[postcss]": {
+        "editor.formatOnSave": false
+    },
+    "[stylus]": {
+        "editor.defaultFormatter": "thisismanta.stylus-supremacy"
+    },
+    "cSpell.enabledSchemes": {
+        "file": false
+    },
+    "cSpell.language": "en,ru",
+    "cSpell.spellCheckOnlyWorkspaceFiles": true,
+    "cSpell.useGitignore": true,
+    "cSpell.validateDirectives": true,
+    "cSpell.words": [
+        "anticon",
+        "atrules",
+        "dmitrymezhnov",
+        "focusable",
+        "globus",
+        "investkz",
+        "mybpm",
+        "poststylus",
+        "rgba",
+        "sidenav",
+        "styl",
+        "svgicon",
+        "ungroup",
+        "xmlutf"
+    ],
+    "cssToStylus.indent": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "emmet.includeLanguages": {
+        "postcss": "css"
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "*.styl": "${basename}.css",
+        ".editorconfig": ".editorconfig-checker.*",
+        "package.json": "bun.lock*,package-*.json,bunfig.toml"
+    },
+    "files.associations": {
+        "**/.github/workflows/*.yml": "github-actions-workflow",
+        "*.user.css": "postcss",
+        "LICENCE": "plaintext"
+    },
+    "files.defaultLanguage": "stylus",
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.readonlyInclude": {
+        "**/*.user.css": true
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "gitconfig-lsp.format.gitattributes.hardTab": false,
+    "gitconfig-lsp.format.gitattributes.hardTabWidth": 4,
+    "gitconfig-lsp.format.gitattributes.tabSize": 16,
+    "material-icon-theme.files.associations": {
+        "*.user.css": "postcss"
+    },
+    "prettier.arrowParens": "always",
+    "prettier.bracketSameLine": false,
+    "prettier.bracketSpacing": true,
+    "prettier.endOfLine": "lf",
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "prettier.insertPragma": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.printWidth": 120,
+    "prettier.proseWrap": "always",
+    "prettier.quoteProps": "as-needed",
+    "prettier.requireConfig": false,
+    "prettier.requirePragma": false,
+    "prettier.semi": true,
+    "prettier.singleAttributePerLine": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "none",
+    "prettier.useEditorConfig": true,
+    "prettier.useTabs": false,
+    "prettier.vueIndentScriptAndStyle": true,
+    "stylelint.customSyntax": "stylelint-stylus/custom-syntax",
+    "stylelint.validate": ["stylus"],
+    "stylusSupremacy.alwaysUseAtBlock": false,
+    "stylusSupremacy.alwaysUseExtends": false,
+    "stylusSupremacy.alwaysUseImport": false,
+    "stylusSupremacy.alwaysUseNoneOverZero": true,
+    "stylusSupremacy.alwaysUseNot": false,
+    "stylusSupremacy.alwaysUseZeroWithoutUnit": true,
+    "stylusSupremacy.insertBraces": false,
+    "stylusSupremacy.insertColons": false,
+    "stylusSupremacy.insertLeadingZeroBeforeFraction": false,
+    "stylusSupremacy.insertNewLineAroundBlocks": true,
+    "stylusSupremacy.insertNewLineAroundImports": true,
+    "stylusSupremacy.insertNewLineAroundOthers": true,
+    "stylusSupremacy.insertNewLineAroundProperties": true,
+    "stylusSupremacy.insertNewLineBeforeElse": false,
+    "stylusSupremacy.insertParenthesisAfterNegation": false,
+    "stylusSupremacy.insertParenthesisAroundIfCondition": false,
+    "stylusSupremacy.insertSemicolons": false,
+    "stylusSupremacy.insertSpaceAfterComma": true,
+    "stylusSupremacy.insertSpaceAfterComment": true,
+    "stylusSupremacy.insertSpaceBeforeComment": true,
+    "stylusSupremacy.insertSpaceInsideParenthesis": true,
+    "stylusSupremacy.newLineChar": "\n",
+    "stylusSupremacy.preserveNewLinesBetweenPropertyValues": false,
+    "stylusSupremacy.quoteChar": "'",
+    "stylusSupremacy.reduceMarginAndPaddingValues": false,
+    "stylusSupremacy.selectorSeparator": "\n",
+    "stylusSupremacy.sortProperties": "alphabetical",
+    "stylusSupremacy.tabStopChar": "    ",
+    "task.allowAutomaticTasks": "on",
+    "yaml.schemas": {
+        "https://json.schemastore.org/pre-commit-config.json": "**/.github/hooks/.pre-commit-config.yaml",
+        "https://www.schemastore.org/github-workflow.json": "**/.github/workflows/**.yml"
+    }
+}

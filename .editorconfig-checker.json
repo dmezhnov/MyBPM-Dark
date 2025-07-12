@@ -1,6 +1,6 @@
 {
     "AllowedContentTypes": [],
-    "Exclude": [".*LICENSE"],
+    "Exclude": [".*LICENSE", ".*bun\\.lock."],
     "Format": "",
     "IgnoreDefaults": false,
     "PassedFiles": [],

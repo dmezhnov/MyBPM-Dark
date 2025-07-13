@@ -1,0 +1,30 @@
+{
+    "arrowParens": "always",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsonRecursiveSort": true,
+    "jsonSortOrder": "{\"/.*/g\": \"numeric\"}",
+    "jsxSingleQuote": true,
+    "plugins": [
+        "prettier-plugin-sort-json",
+        "prettier-plugin-packagejson",
+        "prettier-plugin-organize-imports",
+        "prettier-plugin-jsdoc",
+        "prettier-plugin-sh",
+        "prettier-plugin-curly"
+    ],
+    "printWidth": 120,
+    "proseWrap": "always",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": true,
+    "singleAttributePerLine": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "tsdoc": true,
+    "useTabs": false,
+    "vueIndentScriptAndStyle": true
+}

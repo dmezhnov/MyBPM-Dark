@@ -1,0 +1,28 @@
+{
+    "tasks": [
+        {
+            "group": {
+                "isDefault": true,
+                "kind": "build"
+            },
+            "isBackground": true,
+            "label": "Watcher",
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "script": "compile:stylus:watch",
+            "type": "bun"
+        },
+        {
+            "group": {
+                "isDefault": true,
+                "kind": "test"
+            },
+            "isBackground": false,
+            "label": "Lint",
+            "script": "lint",
+            "type": "bun"
+        }
+    ],
+    "version": "2.0.0"
+}

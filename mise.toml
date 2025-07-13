@@ -1,0 +1,14 @@
+[settings]
+windows_shim_mode = "symlink"
+asdf_compat = true
+yes = true
+experimental=true
+
+[settings.npm]
+bun = true
+
+[settings.status]
+missing_tools = "always"
+
+[hooks]
+postinstall = "bun i"

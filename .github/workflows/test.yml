@@ -19,8 +19,6 @@ jobs:
                   fetch-depth: 0
             - name: Install mise & tools
               uses: jdx/mise-action@v2
-            - name: Chack bun version
-              run: bun --version
             - run: |
                   git add ./*.user.css -f
                   git restore --staged .github/workflows || true

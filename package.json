@@ -1,17 +1,17 @@
 {
     "type": "module",
     "scripts": {
+        "compile": "bun compile:stylus",
         "compile:stylus": "stylus *.styl -o . --include-css --hoist-atrules -c",
         "compile:stylus:watch": "stylus *.styl -o . --include-css --hoist-atrules -c -w",
         "format": "bun format:prettier && bun format:stylus",
         "format:prettier": "prettier --write .",
         "format:stylus": "stylus-supremacy format \"**/*.styl\" -p \"./.vscode/settings.json\" -r",
-        "postinstall": "bun compile:stylus && bun format:prettier",
+        "postinstall": "bun compile:stylus && bun format",
         "lint": "bun lint:stylus && bun lint:editorconfig",
         "lint:editorconfig": "editorconfig-checker",
         "lint:stylus": "stylelint **/*.styl --custom-syntax stylelint-stylus/custom-syntax",
-        "lint:stylus:fix": "stylelint **/*.styl --custom-syntax stylelint-stylus/custom-syntax --fix",
-        "test": "bun test"
+        "lint:stylus:fix": "stylelint **/*.styl --custom-syntax stylelint-stylus/custom-syntax --fix"
     },
     "devDependencies": {
         "@types/bun": "^1.2.18",

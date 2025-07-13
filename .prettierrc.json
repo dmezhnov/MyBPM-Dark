@@ -6,7 +6,6 @@
     "insertPragma": false,
     "jsonRecursiveSort": true,
     "jsonSortOrder": "{\"/.*/g\": \"numeric\"}",
-    "jsxBracketSameLine": false,
     "jsxSingleQuote": true,
     "plugins": [
         "prettier-plugin-sort-json",

@@ -1,4 +1,7 @@
 {
+    "[dotenv]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
     "[gitattributes]": {
         "editor.defaultFormatter": "yy0931.gitconfig-lsp"
     },
@@ -26,7 +29,6 @@
     "[stylus]": {
         "editor.defaultFormatter": "thisismanta.stylus-supremacy"
     },
-    "bun.runtime": "c:\\users\\dmitr\\appdata\\local\\mise\\shims\\bun.exe",
     "cSpell.enabledSchemes": {
         "file": false
     },
@@ -58,6 +60,10 @@
     "emmet.includeLanguages": {
         "postcss": "css"
     },
+    "env-sync.envDestination": [
+        ".env.example"
+    ],
+    "env-sync.envSource": ".env",
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
     "explorer.fileNesting.patterns": {
@@ -138,6 +144,7 @@
     "task.allowAutomaticTasks": "on",
     "yaml.schemas": {
         "https://json.schemastore.org/pre-commit-config.json": "**/.github/hooks/.pre-commit-config.yaml",
-        "https://www.schemastore.org/github-workflow.json": "**/.github/workflows/**.yml"
+        "https://www.schemastore.org/github-workflow.json": "**/.github/workflows/*.yml,**/.github/workflows/*.yaml",
+        "https://docs.renovatebot.com/renovate-schema.json": "**/renovate.json*,**/*.renovaterc"
     }
 }

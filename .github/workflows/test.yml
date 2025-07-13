@@ -29,5 +29,4 @@ jobs:
                   author-name: github-actions[bot]
                   author-email: github-actions[bot]@users.noreply.github.com
                   commit-message: 'Add compiled files'
-                  fail-if-empty: true
                   create-commit: true

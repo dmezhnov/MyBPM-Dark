@@ -2,3 +2,5 @@
 **/bun.lock
 **/package-lock.json
 **/*.user.css
+**/*.env
+!**/*.example

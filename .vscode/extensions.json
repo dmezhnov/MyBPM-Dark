@@ -11,6 +11,7 @@
         "oven.bun-vscode",
         "thisismanta.stylus-supremacy",
         "tamasfe.even-better-toml",
-        "hverlin.mise-vscode"
+        "hverlin.mise-vscode",
+        "dotenv.dotenv-vscode"
     ]
 }

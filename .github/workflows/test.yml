@@ -3,7 +3,7 @@ run-name: test
 on:
     push:
         branches:
-        - test
+            - test
 
 permissions:
     contents: write
@@ -13,25 +13,23 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            -   name: Checkout
-                uses: actions/checkout@v4
-                with:
-                    fetch-depth: 0
-            -   name: Install mise & tools
-                uses: jdx/mise-action@v2
-            -   name: Chack bun version
-                run: bun --version
-            -   name: Install dependencies
-                run: bun install
-            -   run: |
-                    git add ./*.user.css -f
-                    git restore --staged .github/workflows || true
-                    git checkout -- .github/workflows || true
-            -   name: Upload compiled files
-                uses: actions-go/push@v1
-                with:
-                    author-name: github-actions[bot]
-                    author-email: github-actions[bot]@users.noreply.github.com
-                    commit-message: "Add compiled files"
-                    fail-if-empty: true
-                    create-commit: true
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+            - name: Install mise & tools
+              uses: jdx/mise-action@v2
+            - name: Chack bun version
+              run: bun --version
+            - run: |
+                  git add ./*.user.css -f
+                  git restore --staged .github/workflows || true
+                  git checkout -- .github/workflows || true
+            - name: Upload compiled files
+              uses: actions-go/push@v1
+              with:
+                  author-name: github-actions[bot]
+                  author-email: github-actions[bot]@users.noreply.github.com
+                  commit-message: 'Add compiled files'
+                  fail-if-empty: true
+                  create-commit: true

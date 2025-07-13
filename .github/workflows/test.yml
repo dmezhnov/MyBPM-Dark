@@ -23,7 +23,9 @@ jobs:
                 run: bun --version
             -   name: Install dependencies
                 run: bun install
-            -   run: git add ./*.user.css -f
+            -   run: |
+                    git add ./*.user.css -f
+                    git status
             -   name: Upload compiled files
                 uses: actions-go/push@v1
                 with:

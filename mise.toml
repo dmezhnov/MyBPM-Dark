@@ -2,6 +2,7 @@
 windows_shim_mode = "symlink"
 asdf_compat = true
 yes = true
+experimental=true
 
 [settings.npm]
 bun = true

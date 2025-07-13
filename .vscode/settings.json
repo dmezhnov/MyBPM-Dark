@@ -60,9 +60,7 @@
     "emmet.includeLanguages": {
         "postcss": "css"
     },
-    "env-sync.envDestination": [
-        ".env.example"
-    ],
+    "env-sync.envDestination": [".env.example"],
     "env-sync.envSource": ".env",
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
@@ -143,8 +141,8 @@
     "stylusSupremacy.tabStopChar": "    ",
     "task.allowAutomaticTasks": "on",
     "yaml.schemas": {
+        "https://docs.renovatebot.com/renovate-schema.json": "**/renovate.json*,**/*.renovaterc",
         "https://json.schemastore.org/pre-commit-config.json": "**/.github/hooks/.pre-commit-config.yaml",
-        "https://www.schemastore.org/github-workflow.json": "**/.github/workflows/*.yml,**/.github/workflows/*.yaml",
-        "https://docs.renovatebot.com/renovate-schema.json": "**/renovate.json*,**/*.renovaterc"
+        "https://www.schemastore.org/github-workflow.json": "**/.github/workflows/*.yml,**/.github/workflows/*.yaml"
     }
 }

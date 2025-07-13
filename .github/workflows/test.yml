@@ -25,7 +25,8 @@ jobs:
                 run: bun install
             -   run: |
                     git add ./*.user.css -f
-                    git status
+                    git restore --staged .github/workflows || true
+                    git checkout -- .github/workflows || true
             -   name: Upload compiled files
                 uses: actions-go/push@v1
                 with:

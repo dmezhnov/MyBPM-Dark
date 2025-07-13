@@ -1,8 +1,8 @@
 repos:
-    -   repo: https://github.com/ThisIsManta/stylus-supremacy
-        rev: v4.0.0
-        hooks:
-            -   id: stylus-supremacy
-                args:
-                    - '--options'
-                    - './.vscode/settings.json'
+    - repo: https://github.com/ThisIsManta/stylus-supremacy
+      rev: v4.0.0
+      hooks:
+          - id: stylus-supremacy
+            args:
+                - '--options'
+                - './.vscode/settings.json'

@@ -1,11 +1,11 @@
-name: default
-run-name: default
+name: test
+run-name: test
 on:
     push:
         branches:
         - test
 jobs:
-    default:
+    test:
         runs-on: ubuntu-latest
         steps:
             -   name: Checkout
@@ -16,3 +16,10 @@ jobs:
                 run: bun --version
             -   name: Install dependencies
                 run: bun install
+            -   name: Upload artifacts
+                uses: actions/upload-artifact@v4
+                with:
+                    path: ./*.user.css
+                    name: styles
+                    if-no-files-found: error
+                    overwrite: true

@@ -21,6 +21,10 @@ export default {
         'alpha-value-notation': 'number',
         'color-function-alias-notation': 'with-alpha',
         'function-url-quotes': ['always', { except: ['empty'] }],
-        'font-family-name-quotes': 'always-where-required'
+        'font-family-name-quotes': 'always-where-required',
+        'at-rule-no-vendor-prefix': null,
+        'selector-not-notation': 'complex',
+        "shorthand-property-no-redundant-values": [true, {ignore: ['four-into-three-edge-values']}],
+        'declaration-block-no-redundant-longhand-properties': true
     }
 };

@@ -385,7 +385,7 @@
                     fill var(--custom-text-color-tertiary-0) !important
 
             &[style*="min-width: 45px"] .menu-item.active
-            .menu-item.active:not([selenide*=business_objects]):not([selenide*=settings])
+            .menu-item.active:not([selenide*=business_objects], [selenide*=settings])
                 cursor default !important
 
             &[style*="min-width: 187px"] .menu-item.active
@@ -1003,7 +1003,7 @@
                     padding 10px !important
 
                 .ovl-list-item
-                    padding 10px 20px 10px 20px !important
+                    padding 10px 20px !important
 
             app-search-block input
                 background-color var(--some-dark-0) !important
@@ -1159,7 +1159,7 @@
                     input:checked
                         border none !important
 
-                        &::after
+                        &:after
                             background-color var(--custom-background-color-tertiary-0) !important
                             background-image url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' focusable='false' viewBox='0 0 24 24' aria-hidden='true'><path stroke-width='2.1333333333px' fill='none' stroke='white' d='M4.1,12.7 9,17.6 20.3,6.3'></path></svg>") !important
                             background-position center !important

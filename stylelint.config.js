@@ -12,6 +12,15 @@ export default {
         'stylus/indentation': 4,
         'stylus/selector-type-no-unknown': null,
         'selector-class-pattern': null,
-        'declaration-no-important': null
+        'declaration-no-important': null,
+        'selector-pseudo-element-colon-notation': 'single',
+        'selector-attribute-quotes': 'never',
+        'custom-property-empty-line-before': 'never',
+        'stylus/number-leading-zero': 'never',
+        'color-function-notation': 'legacy',
+        'alpha-value-notation': 'number',
+        'color-function-alias-notation': 'with-alpha',
+        'function-url-quotes': ['always', { except: ['empty'] }],
+        'font-family-name-quotes': 'always-where-required'
     }
 };

@@ -23,14 +23,8 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[postcss]": {
-        "editor.formatOnSave": false
-    },
     "[stylus]": {
         "editor.defaultFormatter": "thisismanta.stylus-supremacy"
-    },
-    "cSpell.enabledSchemes": {
-        "file": false
     },
     "cSpell.language": "en,ru",
     "cSpell.spellCheckOnlyWorkspaceFiles": true,
@@ -60,9 +54,7 @@
     "emmet.includeLanguages": {
         "postcss": "css"
     },
-    "env-sync.envDestination": [
-        ".env.example"
-    ],
+    "env-sync.envDestination": [".env.example"],
     "env-sync.envSource": ".env",
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
@@ -74,6 +66,7 @@
     "files.associations": {
         "**/.github/workflows/*.yml": "github-actions-workflow",
         "*.user.css": "postcss",
+        ".stylintrc": "jsonc",
         "LICENCE": "plaintext"
     },
     "files.defaultLanguage": "stylus",
@@ -133,18 +126,18 @@
     "stylusSupremacy.insertSpaceAfterComma": true,
     "stylusSupremacy.insertSpaceAfterComment": true,
     "stylusSupremacy.insertSpaceBeforeComment": true,
-    "stylusSupremacy.insertSpaceInsideParenthesis": true,
+    "stylusSupremacy.insertSpaceInsideParenthesis": false,
     "stylusSupremacy.newLineChar": "\n",
     "stylusSupremacy.preserveNewLinesBetweenPropertyValues": false,
-    "stylusSupremacy.quoteChar": "'",
+    "stylusSupremacy.quoteChar": "\"",
     "stylusSupremacy.reduceMarginAndPaddingValues": false,
     "stylusSupremacy.selectorSeparator": "\n",
     "stylusSupremacy.sortProperties": "alphabetical",
     "stylusSupremacy.tabStopChar": "    ",
     "task.allowAutomaticTasks": "on",
     "yaml.schemas": {
+        "https://docs.renovatebot.com/renovate-schema.json": "**/renovate.json*,**/*.renovaterc",
         "https://json.schemastore.org/pre-commit-config.json": "**/.github/hooks/.pre-commit-config.yaml",
-        "https://www.schemastore.org/github-workflow.json": "**/.github/workflows/*.yml,**/.github/workflows/*.yaml",
-        "https://docs.renovatebot.com/renovate-schema.json": "**/renovate.json*,**/*.renovaterc"
+        "https://www.schemastore.org/github-workflow.json": "**/.github/workflows/*.yml,**/.github/workflows/*.yaml"
     }
 }

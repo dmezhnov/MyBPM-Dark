@@ -24,7 +24,7 @@ export default {
         'font-family-name-quotes': 'always-where-required',
         'at-rule-no-vendor-prefix': null,
         'selector-not-notation': 'complex',
-        "shorthand-property-no-redundant-values": [true, {ignore: ['four-into-three-edge-values']}],
+        'shorthand-property-no-redundant-values': [true, { ignore: ['four-into-three-edge-values'] }],
         'declaration-block-no-redundant-longhand-properties': true
     }
 };

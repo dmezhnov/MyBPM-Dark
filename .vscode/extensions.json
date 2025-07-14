@@ -12,6 +12,9 @@
         "thisismanta.stylus-supremacy",
         "tamasfe.even-better-toml",
         "hverlin.mise-vscode",
-        "dotenv.dotenv-vscode"
+        "dotenv.dotenv-vscode",
+        "ctf0.duplicated-code-new",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-russian"
     ]
 }

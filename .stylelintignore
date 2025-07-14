@@ -1,3 +1,4 @@
 **/*.user.css
 **/node_modules
 **/package-lock.json
+**/megalinter-reports

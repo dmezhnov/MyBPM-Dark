@@ -138,6 +138,7 @@
     "yaml.schemas": {
         "https://docs.renovatebot.com/renovate-schema.json": "**/renovate.json*,**/*.renovaterc",
         "https://json.schemastore.org/pre-commit-config.json": "**/.github/hooks/.pre-commit-config.yaml",
+        "https://raw.githubusercontent.com/megalinter/megalinter/main/megalinter/descriptors/schemas/megalinter-configuration.jsonschema.json": "**/.mega-linter.yml",
         "https://www.schemastore.org/github-workflow.json": "**/.github/workflows/*.yml,**/.github/workflows/*.yaml"
     }
 }

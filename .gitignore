@@ -4,3 +4,4 @@
 **/*.user.css
 **/*.env
 !**/*.example
+**/megalinter-reports

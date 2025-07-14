@@ -7,7 +7,7 @@
         "format": "bun format:prettier && bun format:stylus",
         "format:prettier": "prettier --write .",
         "format:stylus": "stylus-supremacy format \"**/*.styl\" -p \"./.vscode/settings.json\" -r",
-        "postinstall": "bun compile:stylus && bun format",
+        "postinstall": "bun compile",
         "lint": "bun lint:stylus && bun lint:editorconfig",
         "lint:editorconfig": "editorconfig-checker",
         "lint:stylus": "stylelint **/*.styl --custom-syntax stylelint-stylus/custom-syntax",

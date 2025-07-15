@@ -4,10 +4,18 @@ on:
     push:
         branches:
             - test
+    pull_request:
+        branches:
+            - test
 
 permissions:
     contents: write
+    issues: write
     pull-requests: write
+
+concurrency:
+    group: ${{ github.ref }}-${{ github.workflow }}
+    cancel-in-progress: true
 
 jobs:
     test:
@@ -16,17 +24,42 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
               with:
-                  fetch-depth: 0
+                token: ${{ secrets.GITHUB_TOKEN }}
+                fetch-depth: 0
             - name: Install mise & tools
               uses: jdx/mise-action@v2
-            - run: |
-                  git add ./*.user.css -f
-                  git restore --staged .github/workflows || true
-                  git checkout -- .github/workflows || true
+            - run: Add compiled files to commit
+                    git add ./*.user.css -f
             - name: Upload compiled files
               uses: actions-go/push@v1
               with:
-                  author-name: github-actions[bot]
-                  author-email: github-actions[bot]@users.noreply.github.com
-                  commit-message: 'Add compiled files'
-                  create-commit: true
+                author-name: github-actions[bot]
+                author-email: github-actions[bot]@users.noreply.github.com
+                commit-message: '[github actions bot] Add compiled files'
+                create-commit: true
+            - name: MegaLinter
+              uses: oxsecurity/megalinter@v8
+              id: ml
+              # All available variables are described in documentation
+              # https://megalinter.io/latest/config-file/
+              env:
+                VALIDATE_ALL_CODEBASE: true
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                APPLY_FIXES: all
+                APPLY_FIXES_EVENT: all
+            - name: Archive production artifacts
+              uses: actions/upload-artifact@v4
+              if: success() || failure()
+              with:
+                name: MegaLinter reports
+                include-hidden-files: 'true'
+                path: |
+                    megalinter-reports
+                    mega-linter.log
+            - name: Upload fixed files
+              uses: actions-go/push@v1
+              with:
+                author-name: megalinter-bot
+                author-email: 129584137+megalinter-bot@users.noreply.github.com
+                commit-message: '[MegaLinter] Apply linters fixes'
+                create-commit: true

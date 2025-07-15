@@ -8,7 +8,7 @@ DEFAULT_BRANCH: test
 EXCLUDED_DIRECTORIES:
     - node_modules
     - .git
-    - *.user.css
+    - '*.user.css'
 IGNORE_GENERATED_FILES: true
 IGNORE_GITIGNORED_FILES: true
 PARALLEL: true

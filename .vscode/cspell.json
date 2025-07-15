@@ -17,6 +17,7 @@
     "language": "en, ru",
     "noConfigSearch": true,
     "useGitignore": false,
+    "validateDirectives": true,
     "version": "0.2",
     "words": [
         "anticon",

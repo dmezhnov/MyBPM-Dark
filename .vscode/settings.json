@@ -26,10 +26,7 @@
     "[stylus]": {
         "editor.defaultFormatter": "thisismanta.stylus-supremacy"
     },
-    "cSpell.language": "en,ru",
     "cSpell.spellCheckOnlyWorkspaceFiles": true,
-    "cSpell.useGitignore": true,
-    "cSpell.validateDirectives": true,
     "cssToStylus.indent": 4,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.detectIndentation": false,

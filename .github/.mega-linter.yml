@@ -1,7 +1,20 @@
 # Configuration file for MegaLinter
-#
-# See all available variables at https://megalinter.io/latest/config-file/ and in
-# linters documentation
+# See all available variables at https://megalinter.io/configuration/ and in linters documentation
 
+VALIDATE_ALL_CODEBASE: true
 APPLY_FIXES: all
 SHOW_ELAPSED_TIME: true
+DEFAULT_BRANCH: test
+EXCLUDED_DIRECTORIES:
+    - node_modules
+    - .git
+    - *.user.css
+IGNORE_GENERATED_FILES: true
+IGNORE_GITIGNORED_FILES: true
+PARALLEL: true
+PLUGINS: []
+POST_COMMANDS: []
+PRE_COMMANDS: []
+PRINT_ALPACA: false
+PRINT_ALL_FILES: true
+SPELL_CSPELL_CONFIG_FILE: .vscode/cspell.json

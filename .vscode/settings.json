@@ -6,7 +6,7 @@
         "editor.defaultFormatter": "yy0931.gitconfig-lsp"
     },
     "[github-actions-workflow]": {
-        "editor.defaultFormatter": "kachick.vscode-yamlfmt"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[gitignore]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"

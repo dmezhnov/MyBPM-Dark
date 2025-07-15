@@ -8,9 +8,10 @@
         "format:prettier": "prettier --write .",
         "format:stylus": "stylus-supremacy format \"**/*.styl\" -p \"./.vscode/settings.json\" -r",
         "postinstall": "bun compile",
-        "lint": "bun lint:stylus && bun lint:editorconfig",
+        "lint": "bun lint:stylus && bun lint:editorconfig && lint:spell",
         "lint:editorconfig": "editorconfig-checker",
         "lint:stylus": "stylelint **/*.styl --custom-syntax stylelint-stylus/custom-syntax",
+        "lint:spell": "bun cspell .",
         "lint:stylus:fix": "stylelint **/*.styl --custom-syntax stylelint-stylus/custom-syntax --fix"
     },
     "devDependencies": {

@@ -38,7 +38,7 @@ jobs:
                 commit-message: '[github actions bot] Add compiled files'
                 create-commit: true
             - name: MegaLinter
-              uses: oxsecurity/megalinter@v8
+              uses: oxsecurity/megalinter@v9
               id: ml
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

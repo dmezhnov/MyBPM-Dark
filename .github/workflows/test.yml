@@ -45,7 +45,7 @@ jobs:
                 MEGALINTER_CONFIG: .github/.mega-linter.yml
                 EXTENDS: .github/.mega-linter.yml
             - name: Archive production artifacts
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v7
               if: success() || failure()
               with:
                 name: MegaLinter reports
